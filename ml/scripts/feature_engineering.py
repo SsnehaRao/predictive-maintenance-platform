@@ -7,14 +7,15 @@ import pandas as pd
 # Paths
 # ============================================================
 
-INPUT_PATH = Path(
-    r"E:\predictive-maintenance-data\processed\fd001\train_fd001_processed.csv"
+PROJECT_ROOT = Path(__file__).resolve().parents[2]
+
+OUTPUT_DIR = (
+    PROJECT_ROOT / "data" / "processed" / "fd001"
 )
 
-OUTPUT_DIR = Path(
-    r"E:\predictive-maintenance-data\processed\fd001"
+INPUT_PATH = (
+    OUTPUT_DIR / "train_fd001_processed.csv"
 )
-
 OUTPUT_DIR.mkdir(
     parents=True,
     exist_ok=True,

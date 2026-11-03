@@ -7,12 +7,12 @@ import pandas as pd
 # Paths
 # ============================================================
 
-DATA_DIR = Path(
-    r"E:\predictive-maintenance-data\raw"
-)
+PROJECT_ROOT = Path(__file__).resolve().parents[2]
 
-OUTPUT_DIR = Path(
-    r"E:\predictive-maintenance-data\processed\fd001"
+DATA_DIR = PROJECT_ROOT / "data" / "raw"
+
+OUTPUT_DIR = (
+    PROJECT_ROOT / "data" / "processed" / "fd001"
 )
 
 OUTPUT_DIR.mkdir(

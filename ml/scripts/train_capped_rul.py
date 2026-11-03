@@ -13,13 +13,13 @@ from sklearn.metrics import r2_score
 # Paths
 # ============================================================
 
-DATA_DIR = Path(
-    r"E:\predictive-maintenance-data\processed\fd001"
+PROJECT_ROOT = Path(__file__).resolve().parents[2]
+
+DATA_DIR = (
+    PROJECT_ROOT / "data" / "processed" / "fd001"
 )
 
-MODEL_DIR = Path(
-    r"E:\predictive-maintenance-data\models"
-)
+MODEL_DIR = PROJECT_ROOT / "models"
 
 MODEL_DIR.mkdir(
     parents=True,

@@ -8,6 +8,8 @@ __pycache__/
 .env
 .env.*
 !.env.example
+!backend/.env.example
+!frontend/.env.example
 
 # Node / Next.js
 node_modules/
@@ -31,6 +33,7 @@ Thumbs.db
 
 # Data
 data/raw/
+data/processed/
 
 # Ignore trained machine learning models
 *.joblib

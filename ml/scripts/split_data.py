@@ -8,13 +8,13 @@ from sklearn.model_selection import train_test_split
 # Paths
 # ============================================================
 
-INPUT_PATH = Path(
-    r"E:\predictive-maintenance-data\processed\fd001\train_fd001_features.csv"
+PROJECT_ROOT = Path(__file__).resolve().parents[2]
+
+OUTPUT_DIR = (
+    PROJECT_ROOT / "data" / "processed" / "fd001"
 )
 
-OUTPUT_DIR = Path(
-    r"E:\predictive-maintenance-data\processed\fd001"
-)
+INPUT_PATH = OUTPUT_DIR / "train_fd001_features.csv"
 
 OUTPUT_DIR.mkdir(
     parents=True,
