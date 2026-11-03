@@ -28,7 +28,34 @@ Thumbs.db
 
 # Machine Learning
 *.pkl
-*.joblib
 
 # Data
 data/raw/
+
+# Ignore trained machine learning models
+*.joblib
+
+# Additional Python virtual environments
+venv/
+env/
+
+# Machine Learning model files
+*.h5
+*.keras
+
+# Python testing and coverage
+.coverage
+htmlcov/
+.ruff_cache/
+
+# Database files
+*.db
+*.sqlite
+*.sqlite3
+
+# Logs and temporary files
+*.log
+*.tmp
+
+# Build and deployment
+.vercel/
